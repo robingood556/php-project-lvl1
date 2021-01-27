@@ -1,14 +1,10 @@
 {
-  "name": "vendor_name/php-project-lvl1",
-  "description": "description",
-  "minimum-stability": "stable",
-  "license": "proprietary",
-  "authors": [
-    {
-      "name": "yan-g",
-      "email": "email@example.com"
-    }
-  ],
-  "require": {
-  }
+    "name": "hexlet/code",
+    "authors": [
+        {
+            "name": "yan-g",
+            "email": "yan-gorev@mail.ru"
+        }
+    ],
+    "require": {}
 }
