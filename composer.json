@@ -1,0 +1,14 @@
+{
+    "name": "hexlet/code",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ian Gorev",
+            "email": "yan-gorev@mail.ru"
+        }
+    ],
+    "require": {},
+
+    "bin": ["bin/brain-games"]
+}
+
