@@ -1,14 +1,15 @@
 {
     "name": "hexlet/code",
     "type": "project",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
     "authors": [
         {
             "name": "Ian Gorev",
             "email": "yan-gorev@mail.ru"
         }
     ],
-    "require": {},
 
     "bin": ["bin/brain-games"]
 }
-
