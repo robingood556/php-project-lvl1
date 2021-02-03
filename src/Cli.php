@@ -1,13 +1,12 @@
 <?php
 
-namespace Brain\Games\Cli
+namespace Brain\Games\Cli;
 
-function line($msg = '')
-{
-    Streams::_call('line', func_get_args());
-}
+include '../vendor/autoload.php';
 
-function prompt($question, $default = false, $marker = ': ', $hide = false)
-{
-    return Streams::prompt($question, $default, $marker, $hide);
-}
+use function cli\line;
+use function cli\prompt;
+
+line('Welcome to the Brain Game!');
+$name = prompt('May I have your name?');
+line("Hello, %s!", $name);
