@@ -19,7 +19,7 @@ line('Answer "yes" if the number is even, otherwise answer "no".');
 
 for($i = 0; $i < 3; $i++){
 
-$number = rand();		
+$number = rand();
 print("Qustion: ". $number. "\n");
 $answer = prompt('Your answer: ');
 
@@ -33,7 +33,7 @@ $answer = prompt('Your answer: ');
     }elseif(($number % 2 === 0) && ($answer === "no")) {
         $responce = "no is wrong answer ;(. Correct answer was yes";
     }else{
-	$responce = "dont correct";
+        $responce = "dont correct";
     }
 
 
@@ -41,9 +41,9 @@ print $responce . "\n";
 
 if($responce != "Correct"){
 
-	break;
+        break;
 }elseif(($i == 2) && ($responce == "Correct")){
-	print "Congrats";
+        print "Congrats";
 }
 
 
@@ -53,6 +53,4 @@ if($responce != "Correct"){
 
 Game();
 print("\n");
-
-
 
