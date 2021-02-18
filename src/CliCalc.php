@@ -19,29 +19,40 @@ line('Answer "yes" if the number is even, otherwise answer "no".');
 
 for($i = 0; $i < 3; $i++){
 
-$number = rand();
-print("Qustion: ". $number. "\n");
+$firstnumber = rand();
+$secondnumber = rand();
+
+$arr = ['-', '+', '*'];
+$key = array_rand($arr);
+$sign = $arr[$key];
+
+print("Qustion: ". $firstnumber. $sign. $secondnumber.  "\n");
 $answer = prompt('Your answer: ');
 
+if($sign == "+"){
 
-    if(($number % 2 === 0) && ($answer === "yes")) {
-        $responce = "Correct";
-    }elseif(($number % 2 !== 0) && ($answer === "no")) {
-        $responce = "Correct";
-    }elseif(($number % 2 !== 0) && ($answer === "yes")) {
-        $responce = "yes is wrong answer ;(. Correct answer was no";
-    }elseif(($number % 2 === 0) && ($answer === "no")) {
-        $responce = "no is wrong answer ;(. Correct answer was yes";
-    }else{
-        $responce = "dont correct";
-    }
+	$correctanswer = $firstnumber + $secondnumber;
+}elseif($sign == "-"){
 
+	$correctanswer = $firstnumber - $secondnumber;
+}elseif($sign == "*"){
+
+	$correctanswer = $firstnumber * $secondnumber;
+}
+ 
+    if($answer == $correctanswer){
+
+		$responce = "Correct" ;
+    }elseif($answer != $correctanswer) {
+		$responce = $answer . " is wrong answer ;(. Correct answer was ". $correctanswer ;
+}
 
 print $responce . "\n";
 
 if($responce != "Correct"){
 
         break;
+
 }elseif(($i == 2) && ($responce == "Correct")){
         print "Congrats";
 }
