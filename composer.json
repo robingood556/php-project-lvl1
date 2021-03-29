@@ -14,9 +14,5 @@
         }
     ],
 
-    "bin": ["bin/brain-games"],
-    "scripts": {
-	"phpcs": ["./vendor/bin/phpcs"]
-	}
-
+    "bin": ["bin/brain-games"]
 }
